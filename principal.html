@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Se define el documento como HTML5 y el idioma como español -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Codificación de caracteres para soportar tildes, ñ, etc. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsive -->
+  <title>Aaron In Rio</title> <!-- Título que aparece en la pestaña del navegador -->
+  <link rel="stylesheet" href="css/styles.css"> <!-- Enlace al archivo CSS externo -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--ICONOS-->
+
+</head>
+
+<!-- Ícono que aparece en la pestaña del navegador -->
+<link rel="icon" type="image/x-icon" href="Img/Logo Aaron.png">
+
+<body>
+
+  <!-- NAVBAR (barra de navegación principal) -->
+  <nav class="navbar">
+    <!-- Logo de la empresa con link a principal.html -->
+    <div class="navbar-logo">
+      <a href="principal.html">
+        <img src="Img/Logo Aaron.png" alt="Logo">
+      </a>
+    </div>
+    <!-- Botón Hamburguesa (solo en móvil/tablet) -->
+    <div class="menu-btn" id="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Enlaces de navegación -->
+    <div class="navbar-nav" id="menu">
+      <a href="#">Inicio</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+      <a href="Comentarios.html">Opiniones</a>
+    </div>
+
+    <!-- Ícono flotante del carrito -->
+    <div id="cart-icon">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span id="cart-count">0</span>
+    </div>
+
+    <!-- Overlay de fondo -->
+    <div id="cart-overlay"></div>
+
+    <!-- Panel lateral del carrito -->
+    <div id="cart-panel" class="cart-panel">
+      <div class="cart-header">
+        <div class="cart-header-left">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <h3>Tu carrito</h3>
+          <span id="cart-count-inline">0</span>
+        </div>
+        <button id="cart-close" class="cart-close">&times;</button>
+      </div>
+
+      <ul id="cart-items"></ul>
+
+      <div class="cart-footer">
+        <div class="cart-subtotal">
+          <span>Subtotal:</span>
+          <strong>R$<span id="cart-total">0</span></strong>
+        </div>
+        <button id="cart-send">Finalizar compra</button>
+        <button id="cart-clear">Vaciar carrito</button>
+      </div>
+    </div>
+
+
+
+  </nav>
+
+
+  <!-- CAROUSEL principal de imágenes -->
+  <section class="hero-carousel">
+    <div class="carousel-slides">
+
+      <!-- Slide 1 -->
+      <div class="carousel-slide active">
+        <img src="Img/Brasil-1920x1080.jpg" alt="Playa de Copacabana">
+        <div class="carousel-content">
+          <h1>Disfruta de Brasil</h1>
+          <p>Descubre la magia de Brasil en cada viaje</p>
+          <a href="#destinos" class="btn">Explorar</a>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-slide">
+        <img src="Img/Cabo Frio-1920x1080.jpg" alt="Cristo Redentor">
+        <div class="carousel-content">
+          <h1>Maravillas de Brasil</h1>
+          <p>Descubre los destinos más impresionantes</p>
+          <a href="#destinos" class="btn">Ver destinos</a>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-slide">
+        <img src="Img/Arraial Do Cabo-1920x1080.jpg" alt="Fernando de Noronha">
+        <div class="carousel-content">
+          <h1>Paraíso Tropical</h1>
+          <p>Experimenta la belleza natural de Brasil</p>
+          <a href="#destinos" class="btn">Ver ofertas</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botones de navegación del carrusel -->
+    <div class="carousel-nav">
+      <button class="carousel-button prev">&#10094;</button> <!-- Flecha izquierda -->
+      <button class="carousel-button next">&#10095;</button> <!-- Flecha derecha -->
+    </div>
+
+    <!-- Indicadores circulares del carrusel -->
+    <div class="carousel-dots">
+      <div class="carousel-dot active"></div>
+      <div class="carousel-dot"></div>
+      <div class="carousel-dot"></div>
+    </div>
+  </section>
+
+  <!-- Sección de Alojamientos -->
+  <section id="destinos">
+    <h2 class="section-title">Alojamientos </h2>
+    <div class="cards">
+
+      <!-- Card 1 -->
+      <div class="card">
+        <a href="AlojamientosCopacabana.html" class="card">
+          <img src="Img/Rio de Janeiro.jpg" alt="Destino 1">
+        </a>
+        <h3>Copacabana</h3>
+        <p>La famosa playa de Río de Janeiro, reconocida por su icónico paseo marítimo y su vibrante energía.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <a href="AlojamientosBuzios.html" class="card">
+          <img src="Img/Buzios.jpg" alt="Destino 2">
+        </a>
+        <h3>Buzios</h3>
+        <p>Un paraíso con más de 365 islas y playas de aguas cristalinas en la costa de Brasil.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Excursiones -->
+  <section id="Tours">
+    <h2 class="section-title">Excurciones increibles</h2>
+    <div class="cards">
+
+      <!-- Excursión 1 -->
+      <div class="card">
+        <a href="ExcurcionesRio.html" class="card">
+          <img src="Img/Rio de Janeiro.jpg" alt="Tour 1">
+        </a>
+        <h3>Río de Janeiro</h3>
+        <p>Playas, carnaval y el Cristo Redentor.</p>
+      </div>
+
+      <!-- Excursión 2 -->
+      <div class="card">
+        <a href="ExcurcionesBuzios.html" class="card">
+          <img src="Img/Buzios.jpg" alt="Tour 2">
+        </a>
+        <h3>Buzios</h3>
+        <p>Un paraíso con más de 365 islas y playas de aguas cristalinas en la costa de Brasil.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Traslados -->
+  <section id="traslados">
+    <h2 class="section-title">Traslados Disponibles</h2>
+    <div class="cards">
+      <!-- Traslado Interno -->
+      <div class="card">
+        <a href="trasladosInternos.html">
+          <img src="img/trasaladospriv.jpg" alt="Internos">
+        </a>
+        <h3>Internos</h3>
+        <p>Dentro de la Ciudad.</p>
+      </div>
+      <!-- Traslado Externo -->
+      <div class="card">
+        <a href="trasladosexternos.html">
+          <img src="Img/trasaladospriv2.jpg" alt="Externos">
+        </a>
+        <h3>Externos</h3>
+        <p>Ciudad en Ciudad.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Ofertas -->
+  <section id="ofertas">
+    <h2 class="section-title">Ofertas Exclusivas</h2>
+    <div class="cards">
+
+      <!-- Oferta 1 -->
+      <div class="card" data-name="Paquete Buzios" data-price="1200" data-category="ofertas"
+        data-options='[{"Cantidad de personas": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "Más de 10"]}]'
+        data-images='["img/ofertaX.jpg", "Img/Buzios.jpg", "Img/Cabo Frio-1920x1080.jpg"]'
+        data-description="Paquete de alojamiento y traslados con descuento. Disfruta de una estadía en Buzios sin preocupaciones.">
+
+        <img class="open-modal-trigger" src="img/ofertaX.jpg" alt="Oferta 1">
+        <div class="card-content">
+          <h3>Paquete Buzios: Alojamiento + Traslado</h3>
+          <p>Incluye 4 noches en Buzios + traslados de aeropuerto.</p>
+          <p class="offer-price">Precio: R$1200</p>
+        </div>
+      </div>
+
+      <!-- Oferta 2 -->
+      <div class="card" data-name="Traslado Privado + City Tour" data-price="350" data-category="ofertas"
+        data-options='[{"Tipo": ["Traslado Aeropuerto", "Traslado Intercity"]}]'
+        data-images='["Img/trasaladospriv2.jpg", "Img/trasaladospriv.jpg", "Img/Rio de Janeiro.jpg"]'
+        data-description="Contrata un traslado privado y obtén un tour gratuito por las playas de Copacabana.">
+
+        <img class="open-modal-trigger" src="Img/trasaladospriv2.jpg" alt="Oferta 2">
+        <div class="card-content">
+          <h3>Traslado Privado + City Tour Gratuito</h3>
+          <p>Contrata un traslado privado y obtén un tour a pie por Copacabana.</p>
+          <p class="offer-price">Precio: R$350</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botón para ver más ofertas -->
+    <div class="ver-mas-container">
+      <a href="ofertas.html" class="ver-mas-btn">Ver más</a>
+    </div>
+  </section>
+
+  <!-- Modal (ventana emergente) para detalles de ofertas -->
+  <div id="modal-options" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span> <!-- Botón cerrar -->
+      <h2 id="modal-title"></h2>
+      <p id="modal-description" class="modal-description"></p>
+
+      <!-- Galería de imágenes dentro del modal -->
+      <div class="modal-gallery">
+        <button class="modal-nav-button prev-slide">&lt;</button>
+        <div class="modal-slides-container"></div>
+        <button class="modal-nav-button next-slide">&gt;</button>
+      </div>
+
+      <!-- Opciones dinámicas de la oferta -->
+      <div class="modal-options-container"></div>
+
+      <p class="modal-price">Precio Total: R$<span id="modal-price-value">0</span></p>
+      <button id="add-to-cart-modal">Agregar al carrito</button>
+    </div>
+  </div>
+
+  <!-- SOBRE NOSOTROS -->
+  <section id="nosotros">
+    <h2 class="section-title">Sobre Nosotros</h2>
+    <div class="about">
+      <img src="Img/Nosotros.jpg" alt="Nosotros">
+      <div class="about-text">
+        <!-- Texto descriptivo de la empresa -->
+        <p>Claro, aquí tienes una versión mucho más extendida...</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Apartado de Asesores -->
+  <section class="asesores">
+    <h2>Nuestros Asesores de Viajes</h2>
+    <div class="asesores-cards">
+      <!-- Tarjetas de asesores -->
+      <div class="asesor-card">
+        <img src="Img/Candelaasesora.jpg" alt="Asesor 1">
+        <h3>Candela</h3>
+        <p>Asesora de Ventas</p>
+      </div>
+      <div class="asesor-card">
+        <img src="Img/Solasesora.jpg" alt="Asesor 2">
+        <h3>Sol</h3>
+        <p>Asesora de Ventas</p>
+      </div>
+      <div class="asesor-card">
+        <img src="Img/AaronCeo.jpg" alt="Asesor 3">
+        <h3>Aaron</h3>
+        <p>CEO - Asesor de Ventas</p>
+      </div>
+      <div class="asesor-card">
+        <img src="Img/Josefinaasesora.jpg" alt="Asesor 4">
+        <h3>Josefina</h3>
+        <p>Asesora de Ventas</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Slider alternativo con videos -->
+  <section>
+    <h2 class="section-title">Nuestros Clientes</h2>
+    <div class="slider" id="slider">
+      <!-- Video 1 -->
+      <div class="slide active">
+        <video id="sliderVideo" autoplay loop controls muted>
+          <source src="Img/Clientesfelices.mp4" type="video/mp4">
+        </video>
+      </div>
+      <!-- Video 2 -->
+      <div class="slide">
+        <video id="sliderVideo" autoplay loop controls muted>
+          <source src="Img/Clientesfelices2.mp4" type="video/mp4">
+        </video>
+      </div>
+      <!-- Video 3 -->
+      <div class="slide">
+        <video id="sliderVideo" autoplay loop controls muted>
+          <source src="Img/Clientesfelices3.mp4" type="video/mp4">
+        </video>
+      </div>
+      <!-- Video 4 -->
+      <div class="slide">
+        <video id="sliderVideo" autoplay loop controls muted>
+          <source src="Img/Clientesfelices4.mp4" type="video/mp4">
+        </video>
+      </div>
+      <!-- Botones de navegación -->
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- NUEVA INCORPORACION, COMENTARIOS CON CARRUSEL-->
+<section id="comentarios" class="comentarios-section">
+  <h2 class="section-title">Comentarios de nuestros clientes</h2>
+
+  <div class="carousel-container">
+    <div class="carousel-wrapper" id="comentarios-wrapper">
+      
+      <!-- Comentario 1 -->
+      <div class="comentario-slide">
+        <div class="comentario-info">
+          <div class="comentario-header">
+            <img src="https://i.pravatar.cc/80?img=32" alt="Foto cliente" class="comentario-img">
+            <div>
+              <h3>María Angélica</h3>
+              <span>Desde Argentina</span>
+              <div class="comentario-estrellas">★★★★★</div>
+            </div>
+          </div>
+          <p class="comentario-text">
+            “Un viaje inolvidable por Turquía. La atención fue impecable y todo estuvo perfectamente organizado.”
+          </p>
+        </div>
+
+        <div class="comentario-fotos">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400" alt="Foto del viaje">
+          
+          <!-- Video real -->
+          <div class="comentario-video">
+            <video width="400" controls poster="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400">
+              <source src="ruta-del-video-1.mp4" type="video/mp4">
+              Tu navegador no soporta videos.
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comentario 2 -->
+      <div class="comentario-slide">
+        <div class="comentario-info">
+          <div class="comentario-header">
+            <img src="https://i.pravatar.cc/80?img=56" alt="Foto cliente" class="comentario-img">
+            <div>
+              <h3>Zack Salomon</h3>
+              <span>Desde México</span>
+              <div class="comentario-estrellas">★★★★★</div>
+            </div>
+          </div>
+          <p class="comentario-text">
+            “La experiencia fue increíble. Todo muy organizado y sin preocupaciones. Repetiría sin dudarlo.”
+          </p>
+        </div>
+
+        <div class="comentario-fotos">
+          <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?w=400" alt="Foto del viaje">
+          
+          <!-- Video real -->
+          <div class="comentario-video">
+            <video width="400" controls poster="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400">
+              <source src="ruta-del-video-2.mp4" type="video/mp4">
+              Tu navegador no soporta videos.
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <!-- Comentario 3 -->
+      <div class="comentario-slide">
+        <div class="comentario-info">
+          <div class="comentario-header">
+            <img src="https://i.pravatar.cc/80?img=12" alt="Foto cliente" class="comentario-img">
+            <div>
+              <h3>Erika Caron</h3>
+              <span>Desde Chile</span>
+              <div class="comentario-estrellas">★★★★★</div>
+            </div>
+          </div>
+          <p class="comentario-text">
+            “Me encantó la atención y la calidad de los servicios. ¡Lo recomiendo al 100%!”
+          </p>
+        </div>
+
+        <div class="comentario-fotos">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400" alt="Foto del viaje">
+          
+          <!-- Video real -->
+          <div class="comentario-video">
+            <video width="400" controls poster="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=400">
+              <source src="ruta-del-video-3.mp4" type="video/mp4">
+              Tu navegador no soporta videos.
+            </video>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-btn prev">❮</button>
+    <button class="carousel-btn next">❯</button>
+  </div>
+</section>
+
+
+
+
+  <!-- Sección de Opiniones -->
+  <section id="reviews" class="reviews-section">
+    <h2>Deja tu opinión</h2>
+    <form id="review-form">
+      <!-- Nombre -->
+      <div>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <!-- Email -->
+      <div>
+        <label for="email">Email (opcional):</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <!-- Calificación -->
+      <div>
+        <label for="rating">Calificación:</label>
+        <select id="rating" name="rating" required>
+          <option value="">Selecciona</option>
+          <option value="1">1 ⭐</option>
+          <option value="2">2 ⭐⭐</option>
+          <option value="3">3 ⭐⭐⭐</option>
+          <option value="4">4 ⭐⭐⭐⭐</option>
+          <option value="5">5 ⭐⭐⭐⭐⭐</option>
+        </select>
+      </div>
+      <!-- Comentario -->
+      <div>
+        <label for="comment">Comentario:</label>
+        <textarea id="comment" name="comment" rows="4" required></textarea>
+      </div>
+      <!-- Subir archivos -->
+      <div class="file-upload">
+        <label for="files" class="custom-file-label">Subir imágenes o archivos</label>
+        <input type="file" id="files" name="files" multiple accept="image/*,video/*">
+      </div>
+      <!-- Lista de archivos cargados -->
+      <div id="file-list-container">
+        <ul id="file-list"></ul>
+      </div>
+      <!-- Botón enviar -->
+      <button type="submit">Enviar comentario</button>
+    </form>
+  </section>
+
+  <!--  Preguntas Frecuentes -->
+  <section class="faq-section">
+    <h2>Preguntas frecuentes</h2>
+
+    <details>
+      <summary>¿De dónde son?</summary>
+      <p>Somos una empresa con asesores expertos repartidos por Argentina y Brasil. Nuestro
+        propósito es estar siempre al alcance, creciendo con fuerza para ofrecer empeño y calidad en cada servicio.</p>
+    </details>
+
+    <details>
+      <summary>¿Cuánto valen los viajes?</summary>
+      <p>Los valores varían según la fecha, destino y cantidad de pasajeros. Podés ver las diferentes opciones
+        seleccionando el pack que desees, si tenes alguna duda adicional podes consultar por WhatsApp para
+        recibir una atención personalizada.</p>
+    </details>
+
+    <details>
+      <summary>¿Existen descuentos disponibles?</summary>
+      <p>Sí, contamos con promociones por temporada, descuentos por grupos y beneficios exclusivos para clientes
+        frecuentes.</p>
+    </details>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contacto">
+    <div class="footer-content">
+      <div class="social-logos">
+        <a href="https://wa.me/+5521992608622"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.facebook.com/aaroninrio"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/aaroninrio?igsh=a3Azand1a2w5ZzZ6"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@aaron.in.rio?_t=ZM-8z4DXJ8lK9W"><i class="fab fa-tiktok"></i></a>
+      </div>
+
+      <div class="footer-menu">
+        <a href="principal.html">Inicio</a>
+        <a href="principal.html#ofertas">Ofertas</a>
+        <a href="principal.html#nosotros">Nosotros</a>
+        <a href="principal.html#contacto">Contacto</a>
+        <a href="Comentarios.html">Opiniones</a>
+      </div>
+
+      <div class="contact-column">
+        <p><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina</p>
+        <p><i class="fab fa-whatsapp"></i> +55 2 1992608622</p>
+        <p><i class="fas fa-envelope"></i> info@aaroninrio.com.ar</p>
+      </div>
+
+      <p class="footer-copy">&copy; 2025 Aaron In Rio | Todos los derechos reservados | Creado por </p>
+    </div>
+
+    <!-- Botón flotante WhatsApp -->
+    <a href="#" target="_blank" class="whatsapp-float" id="whatsappButton">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Globito de mensaje -->
+    <div class="whatsapp-bubble" id="whatsappBubble">
+      ¿Tenés dudas? ¡Consultanos!
+    </div>
+  </footer>
+
+
+
+  <script src="js/script.js"></script>
+  <script src="js/sliderVideos.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/coment.js"></script>
+  <script src="js/carrousel.coment.js"></script>
+</body>
+
+</html>
