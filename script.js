@@ -36,7 +36,7 @@ const whatsappPhones = [
   "5491128180954",
   "5491156213704",
   "5491136649747",
-  "5521992608622",
+  "5491140791494",
 ];
 
 // Guardar índice actual en localStorage para que persista entre recargas
@@ -190,4 +190,32 @@ document.addEventListener("DOMContentLoaded", () => {
       fileList.appendChild(listItem);
     }
   });
+});
+
+/*
+  ACCESO OCULTO A ADMIN
+  Atajo: Ctrl + Shift + A
+  Al ingresar la contraseña correcta guarda isAdmin=true en localStorage
+  y redirige a admin.html
+*/
+document.addEventListener("keydown", (e) => {
+  // detecta Ctrl + Shift + A (A o a)
+  if (e.ctrlKey && e.shiftKey && e.key && e.key.toLowerCase() === "a") {
+    // evita que se active cuando el usuario está escribiendo en un input/textarea
+    const active = document.activeElement;
+    const typingTags = ["INPUT", "TEXTAREA"];
+    if (active && typingTags.includes(active.tagName)) return;
+
+    const pass = prompt("Acceso administrador — ingrese la contraseña:");
+    // Cambiá la contraseña aquí por una más segura antes de publicar
+    const ADMIN_PASS = "Aaron";
+    if (pass === ADMIN_PASS) {
+      localStorage.setItem("isAdmin", "true");
+      // Aviso (opcional) y redirección al panel
+      alert("Acceso correcto. Redirigiendo al panel de administración...");
+      window.location.href = "administradorAaron.html";
+    } else {
+      alert("Contraseña incorrecta.");
+    }
+  }
 });
