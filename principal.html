@@ -7,6 +7,12 @@
   <title>Aaron In Rio</title> <!-- Título que aparece en la pestaña del navegador -->
   <link rel="stylesheet" href="css/styles.css"> <!-- Enlace al archivo CSS externo -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!--ICONOS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=League+Spartan:wght@100..900&display=swap"
+    rel="stylesheet">
+
 
 </head>
 
@@ -32,11 +38,13 @@
 
     <!-- Enlaces de navegación -->
     <div class="navbar-nav" id="menu">
-      <a href="#">Inicio</a>
-      <a href="#ofertas">Ofertas</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#contacto">Contacto</a>
-      <a href="Comentarios.html">Opiniones</a>
+
+      <a href="principal.html">Inicio</a>
+      <a href="Ofertas.html">Ofertas</a>
+      <a href="principal.html#nosotros">Nosotros</a>
+      <a href="principal.html#opiniones">Opiniones</a>
+      <a href="principal.html#contacto">Contacto</a>
+
     </div>
 
     <!-- Ícono flotante del carrito -->
@@ -82,7 +90,8 @@
 
       <!-- Slide 1 -->
       <div class="carousel-slide active">
-        <img src="Img/Brasil-1920x1080.jpg" alt="Playa de Copacabana">
+
+        <img src="Img/excursiones/rio/1.png" alt="Cristo Redentor">
         <div class="carousel-content">
           <h1>Disfruta de Brasil</h1>
           <p>Descubre la magia de Brasil en cada viaje</p>
@@ -92,7 +101,7 @@
 
       <!-- Slide 2 -->
       <div class="carousel-slide">
-        <img src="Img/Cabo Frio-1920x1080.jpg" alt="Cristo Redentor">
+        <img src="Img/excursiones/buzios/rio/rio-playa1.jpg" alt="Playa de Copacabana">
         <div class="carousel-content">
           <h1>Maravillas de Brasil</h1>
           <p>Descubre los destinos más impresionantes</p>
@@ -102,7 +111,7 @@
 
       <!-- Slide 3 -->
       <div class="carousel-slide">
-        <img src="Img/Arraial Do Cabo-1920x1080.jpg" alt="Fernando de Noronha">
+        <img src="Img/paisajes/fernando-de-noronha.jpg" alt="Fernando de Noronha">
         <div class="carousel-content">
           <h1>Paraíso Tropical</h1>
           <p>Experimenta la belleza natural de Brasil</p>
@@ -113,8 +122,12 @@
 
     <!-- Botones de navegación del carrusel -->
     <div class="carousel-nav">
-      <button class="carousel-button prev">&#10094;</button> <!-- Flecha izquierda -->
-      <button class="carousel-button next">&#10095;</button> <!-- Flecha derecha -->
+      <button class="carousel-button prev">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="carousel-button next">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
     </div>
 
     <!-- Indicadores circulares del carrusel -->
@@ -125,15 +138,56 @@
     </div>
   </section>
 
+  <!-- SECCIÓN POR QUÉ ELEGIRNOS -->
+  <section id="por-que-elegirnos" class="elegirnos-section">
+    <div class="container">
+      <h2 class="section-title titulos-deco">Por qué elegirnos</h2>
+      <p class="section-subtitle  titulos-grande">Viajá con confianza, seguridad y atención real</p>
+
+      <div class="elegirnos-grid">
+        <!-- 1 -->
+        <div class="elegirnos-card">
+          <div class="icon"><i class="fa-solid fa-file-circle-check"></i></div>
+          <h3>Información verificada</h3>
+          <p>Asesoría confiable y transparente para viajar sin preocupaciones</p>
+        </div>
+
+        <!-- 2 -->
+        <div class="elegirnos-card">
+          <div class="icon"><i class="fa-solid fa-credit-card"></i></div>
+          <h3>Pagos seguros</h3>
+          <p>Cuotas sin interés y compras protegidas para tu tranquilidad
+          </p>
+        </div>
+
+        <!-- 3 -->
+        <div class="elegirnos-card">
+          <div class="icon"><i class="fa-solid fa-headset"></i></div>
+          <h3>Atención personalizada</h3>
+          <p>Asesores reales que te acompañan en todo momento</p>
+        </div>
+
+        <!-- 4 -->
+        <div class="elegirnos-card">
+          <div class="icon"><i class="fa-solid fa-earth-americas"></i></div>
+          <h3>Experiencia local</h3>
+          <p>Conocemos Brasil en profundidad y te guiamos con confianza</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
   <!-- Sección de Alojamientos -->
   <section id="destinos">
-    <h2 class="section-title">Alojamientos </h2>
+    <h2 class="section-title titulos-grande">Alojamientos </h2>
     <div class="cards">
 
       <!-- Card 1 -->
       <div class="card">
         <a href="AlojamientosCopacabana.html" class="card">
-          <img src="Img/Rio de Janeiro.jpg" alt="Destino 1">
+          <img src="Img/alojamientos/copacabana/copacabana2.jpg" alt="Destino 1">
         </a>
         <h3>Copacabana</h3>
         <p>La famosa playa de Río de Janeiro, reconocida por su icónico paseo marítimo y su vibrante energía.</p>
@@ -142,7 +196,7 @@
       <!-- Card 2 -->
       <div class="card">
         <a href="AlojamientosBuzios.html" class="card">
-          <img src="Img/Buzios.jpg" alt="Destino 2">
+          <img src="Img/alojamientos/buzios/buzios1.png" alt="Destino 2">
         </a>
         <h3>Buzios</h3>
         <p>Un paraíso con más de 365 islas y playas de aguas cristalinas en la costa de Brasil.</p>
@@ -152,13 +206,13 @@
 
   <!-- Sección de Excursiones -->
   <section id="Tours">
-    <h2 class="section-title">Excurciones increibles</h2>
+    <h2 class="section-title titulos-grande">Excurciones increibles</h2>
     <div class="cards">
 
       <!-- Excursión 1 -->
       <div class="card">
         <a href="ExcurcionesRio.html" class="card">
-          <img src="Img/Rio de Janeiro.jpg" alt="Tour 1">
+          <img src="Img/excursiones/rio/1.png" alt="Tour 1">
         </a>
         <h3>Río de Janeiro</h3>
         <p>Playas, carnaval y el Cristo Redentor.</p>
@@ -167,7 +221,7 @@
       <!-- Excursión 2 -->
       <div class="card">
         <a href="ExcurcionesBuzios.html" class="card">
-          <img src="Img/Buzios.jpg" alt="Tour 2">
+          <img src="Img/excursiones/buzios/arraial/arraial-do-cabo3.jpg" alt="Tour 2">
         </a>
         <h3>Buzios</h3>
         <p>Un paraíso con más de 365 islas y playas de aguas cristalinas en la costa de Brasil.</p>
@@ -177,12 +231,12 @@
 
   <!-- Sección de Traslados -->
   <section id="traslados">
-    <h2 class="section-title">Traslados Disponibles</h2>
+    <h2 class="section-title titulos-grande">Traslados Disponibles</h2>
     <div class="cards">
       <!-- Traslado Interno -->
       <div class="card">
         <a href="trasladosInternos.html">
-          <img src="img/trasaladospriv.jpg" alt="Internos">
+          <img src="Img/traslados/bote1.jpeg" alt="Internos">
         </a>
         <h3>Internos</h3>
         <p>Dentro de la Ciudad.</p>
@@ -190,7 +244,7 @@
       <!-- Traslado Externo -->
       <div class="card">
         <a href="trasladosexternos.html">
-          <img src="Img/trasaladospriv2.jpg" alt="Externos">
+          <img src="Img/traslados/crucero1.jpeg" alt="Externos">
         </a>
         <h3>Externos</h3>
         <p>Ciudad en Ciudad.</p>
@@ -200,7 +254,7 @@
 
   <!-- Sección de Ofertas -->
   <section id="ofertas">
-    <h2 class="section-title">Ofertas Exclusivas</h2>
+    <h2 class="section-title titulos-grande">Ofertas Exclusivas</h2>
     <div class="cards">
 
       <!-- Oferta 1 -->
@@ -261,20 +315,41 @@
   </div>
 
   <!-- SOBRE NOSOTROS -->
+
   <section id="nosotros">
-    <h2 class="section-title">Sobre Nosotros</h2>
-    <div class="about">
-      <img src="Img/Nosotros.jpg" alt="Nosotros">
+    <h2 class="section-title titulos-deco">Sobre Nosotros</h2>
+    <div class="about-container">
+      <div class="about-image">
+        <img src="Img/Nosotros.jpg" alt="Equipo de Aaron In Rio">
+      </div>
+
       <div class="about-text">
-        <!-- Texto descriptivo de la empresa -->
-        <p>Claro, aquí tienes una versión mucho más extendida...</p>
+
+        <p>
+          <strong>Aaron In Rio</strong> nació de una pasión compartida: viajar, conectar con personas y
+          descubrir el alma de Brasil.
+        </p>
+        <p>
+          Lo que empezó como un grupo de amigos apasionados por las playas y la cultura brasileña,
+          creció hasta convertirse en una agencia donde cada viaje se planifica con conocimiento local
+          y atención personalizada.
+        </p>
+        <p>
+          Hoy, acompañamos a cientos de viajeros a vivir Brasil desde adentro,
+          con la tranquilidad de contar con asesores que conocen cada destino,
+          hablan el idioma y están ahí para vos en cada paso.
+        </p>
+        <p class="about-cta">
+          <em>No solo organizamos viajes, te abrimos acompañamos y facilitamos tu camino a Brasil. </em>
+        </p>
       </div>
     </div>
   </section>
 
+
   <!-- Apartado de Asesores -->
-  <section class="asesores">
-    <h2>Nuestros Asesores de Viajes</h2>
+  <section class="asesores ">
+    <h2 class="titulos-grande">Nuestros Asesores de Viajes</h2>
     <div class="asesores-cards">
       <!-- Tarjetas de asesores -->
       <div class="asesor-card">
@@ -300,147 +375,26 @@
     </div>
   </section>
 
-  <!-- Slider alternativo con videos -->
-  <section>
-    <h2 class="section-title">Nuestros Clientes</h2>
-    <div class="slider" id="slider">
-      <!-- Video 1 -->
-      <div class="slide active">
-        <video id="sliderVideo" autoplay loop controls muted>
-          <source src="Img/Clientesfelices.mp4" type="video/mp4">
-        </video>
-      </div>
-      <!-- Video 2 -->
-      <div class="slide">
-        <video id="sliderVideo" autoplay loop controls muted>
-          <source src="Img/Clientesfelices2.mp4" type="video/mp4">
-        </video>
-      </div>
-      <!-- Video 3 -->
-      <div class="slide">
-        <video id="sliderVideo" autoplay loop controls muted>
-          <source src="Img/Clientesfelices3.mp4" type="video/mp4">
-        </video>
-      </div>
-      <!-- Video 4 -->
-      <div class="slide">
-        <video id="sliderVideo" autoplay loop controls muted>
-          <source src="Img/Clientesfelices4.mp4" type="video/mp4">
-        </video>
-      </div>
-      <!-- Botones de navegación -->
-      <button class="prev">&#10094;</button>
-      <button class="next">&#10095;</button>
-    </div>
+
+  <section id=opiniones class="opiniones-carousel section-title">
+    <h2 class="titulos-deco section-title">Opiniones</h2>
+    <!-- Los slides se generan por JS -->
+    <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
   </section>
 
-  <!-- NUEVA INCORPORACION, COMENTARIOS CON CARRUSEL-->
-<section id="comentarios" class="comentarios-section">
-  <h2 class="section-title">Comentarios de nuestros clientes</h2>
-
-  <div class="carousel-container">
-    <div class="carousel-wrapper" id="comentarios-wrapper">
-      
-      <!-- Comentario 1 -->
-      <div class="comentario-slide">
-        <div class="comentario-info">
-          <div class="comentario-header">
-            <img src="https://i.pravatar.cc/80?img=32" alt="Foto cliente" class="comentario-img">
-            <div>
-              <h3>María Angélica</h3>
-              <span>Desde Argentina</span>
-              <div class="comentario-estrellas">★★★★★</div>
-            </div>
-          </div>
-          <p class="comentario-text">
-            “Un viaje inolvidable por Turquía. La atención fue impecable y todo estuvo perfectamente organizado.”
-          </p>
-        </div>
-
-        <div class="comentario-fotos">
-          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400" alt="Foto del viaje">
-          
-          <!-- Video real -->
-          <div class="comentario-video">
-            <video width="400" controls poster="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400">
-              <source src="ruta-del-video-1.mp4" type="video/mp4">
-              Tu navegador no soporta videos.
-            </video>
-          </div>
-        </div>
-      </div>
-
-      <!-- Comentario 2 -->
-      <div class="comentario-slide">
-        <div class="comentario-info">
-          <div class="comentario-header">
-            <img src="https://i.pravatar.cc/80?img=56" alt="Foto cliente" class="comentario-img">
-            <div>
-              <h3>Zack Salomon</h3>
-              <span>Desde México</span>
-              <div class="comentario-estrellas">★★★★★</div>
-            </div>
-          </div>
-          <p class="comentario-text">
-            “La experiencia fue increíble. Todo muy organizado y sin preocupaciones. Repetiría sin dudarlo.”
-          </p>
-        </div>
-
-        <div class="comentario-fotos">
-          <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98?w=400" alt="Foto del viaje">
-          
-          <!-- Video real -->
-          <div class="comentario-video">
-            <video width="400" controls poster="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400">
-              <source src="ruta-del-video-2.mp4" type="video/mp4">
-              Tu navegador no soporta videos.
-            </video>
-          </div>
-        </div>
-      </div>
-
-      <!-- Comentario 3 -->
-      <div class="comentario-slide">
-        <div class="comentario-info">
-          <div class="comentario-header">
-            <img src="https://i.pravatar.cc/80?img=12" alt="Foto cliente" class="comentario-img">
-            <div>
-              <h3>Erika Caron</h3>
-              <span>Desde Chile</span>
-              <div class="comentario-estrellas">★★★★★</div>
-            </div>
-          </div>
-          <p class="comentario-text">
-            “Me encantó la atención y la calidad de los servicios. ¡Lo recomiendo al 100%!”
-          </p>
-        </div>
-
-        <div class="comentario-fotos">
-          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400" alt="Foto del viaje">
-          
-          <!-- Video real -->
-          <div class="comentario-video">
-            <video width="400" controls poster="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=400">
-              <source src="ruta-del-video-3.mp4" type="video/mp4">
-              Tu navegador no soporta videos.
-            </video>
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-    <button class="carousel-btn prev">❮</button>
-    <button class="carousel-btn next">❯</button>
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <span class="close">&times;</span>
+    <button class="lightbox-prev"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="lightbox-content"></div>
+    <button class="lightbox-next"><i class="fa-solid fa-chevron-right"></i></button>
   </div>
-</section>
-
-
 
 
   <!-- Sección de Opiniones -->
   <section id="reviews" class="reviews-section">
-    <h2>Deja tu opinión</h2>
+    <h2 class="titulos-grande section-title">Deja tu opinión</h2>
     <form id="review-form">
       <!-- Nombre -->
       <div>
@@ -451,6 +405,12 @@
       <div>
         <label for="email">Email (opcional):</label>
         <input type="email" id="email" name="email">
+      </div>
+
+      <!-- locacion -->
+      <div>
+        <label for="locacion">Nacionalidad (opcional):</label>
+        <input type="locacion" id="locacion" name="locacion">
       </div>
       <!-- Calificación -->
       <div>
@@ -471,7 +431,7 @@
       </div>
       <!-- Subir archivos -->
       <div class="file-upload">
-        <label for="files" class="custom-file-label">Subir imágenes o archivos</label>
+        <label for="files" class="custom-file-label">Subir imágenes o Videos</label>
         <input type="file" id="files" name="files" multiple accept="image/*,video/*">
       </div>
       <!-- Lista de archivos cargados -->
@@ -485,12 +445,13 @@
 
   <!--  Preguntas Frecuentes -->
   <section class="faq-section">
-    <h2>Preguntas frecuentes</h2>
+    <h2 class="titulos-grande">Preguntas frecuentes</h2>
 
     <details>
       <summary>¿De dónde son?</summary>
       <p>Somos una empresa con asesores expertos repartidos por Argentina y Brasil. Nuestro
-        propósito es estar siempre al alcance, creciendo con fuerza para ofrecer empeño y calidad en cada servicio.</p>
+        propósito es estar siempre al alcance, creciendo con fuerza para ofrecer empeño y calidad en cada servicio.
+      </p>
     </details>
 
     <details>
@@ -521,8 +482,8 @@
         <a href="principal.html">Inicio</a>
         <a href="principal.html#ofertas">Ofertas</a>
         <a href="principal.html#nosotros">Nosotros</a>
+        <a href="principal.html#opiniones">Opiniones</a>
         <a href="principal.html#contacto">Contacto</a>
-        <a href="Comentarios.html">Opiniones</a>
       </div>
 
       <div class="contact-column">
@@ -546,12 +507,24 @@
   </footer>
 
 
+  <!-- Modal oculto para login de administrador -->
+  <div id="admin-login-modal" class="login-modal">
+    <div class="login-box">
+      <h3>Acceso de Administrador</h3>
+      <input type="password" id="admin-password" placeholder="Contraseña">
+      <button id="admin-login-btn">Entrar</button>
+      <button id="admin-cancel-btn">Cancelar</button>
+      <p id="admin-login-error" class="error-msg"></p>
+    </div>
+  </div>
 
   <script src="js/script.js"></script>
-  <script src="js/sliderVideos.js"></script>
+  <!--  <script src="js/sliderVideo.js"></script>-->
   <script src="js/cart.js"></script>
-  <script src="js/coment.js"></script>
-  <script src="js/carrousel.coment.js"></script>
+
+  <!-- Luego el sistema de comentarios y carrusel -->
+  <script src="JS/coment.js"></script>
+
 </body>
 
 </html>
